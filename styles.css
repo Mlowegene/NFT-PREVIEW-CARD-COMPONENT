@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 body {
     background-color: hsl(217, 54%, 11%);
-    font-family: "Outfit";
+    font-family: 'Outfit', sans-serif;
 }
 
 .container {
@@ -15,37 +21,129 @@ body {
 .card {
     background:hsl(216, 50%, 16%);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    width: 300px;
-    height: 600px;
-    border-radius: 15px;
+    width: 250px;
+    border-radius: 10px;
     padding: 15px;
     
 }
 
 .card-image {
-    background-image: url('./images/image-equilibrium.jpg');
-    height: 300px;
+    height: 200px;
     margin-bottom: 15px;
-    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    cursor: pointer;
     border-radius: 10px;
 }
 
-p {
-    font-size: 18px;
-    color: hsl(215, 51%, 70%);
-    font-family: oufit;
+.icon-view {
+    background-color: hsl(178, 100%, 50%, 0.5);
+    opacity: 0;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
 }
 
-h4 {
+.icon-view:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.icon-view img {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header h4 {
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.header h4:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.header p {
+    font-size: 12px;
+    opacity: .7;
+    line-height: 1rem;
+    color: hsl(215, 51%, 70%);
+    padding: .3rem 0;
 }
 
 .desc {
     display: flex;
     justify-content: space-between;
-    
+    margin: .4rem 0;
 }
 
-footer img {
-    height: 500px;
+.icon{
+    color: hsl(178, 100%, 50%);
+    position: relative;
+    margin-left: 1rem;
 }
+
+.icon img {
+    margin: 0 3px;
+    position: absolute;
+    top: 2px;
+    left: -28%;
+}
+
+.clock {
+    color: hsl(215, 51%, 70%);
+    position: relative;
+}
+
+.clock img {
+    position: absolute;
+    top: 2px;
+    left: -28%;
+}
+
+.line {
+    margin: 1rem 0;
+}
+
+.line hr {
+    opacity: .2;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+}
+.footer img{
+    width:40px;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.footer p {
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+}
+
+.footer p span {
+   color: hsl(0, 0%, 100%);
+   cursor: pointer;
+}
+
+.footer p span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
